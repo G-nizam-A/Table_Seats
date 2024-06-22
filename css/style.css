@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +8,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 body {
   background: #f6f6f9;
 }
-
 html,
 body {
   width: 100%;
   height: 100%;
 }
-
 .header {
   display: flex;
   align-items: center;
@@ -28,32 +24,25 @@ body {
   padding: 20px;
   background: #fff;
 }
-
 .logo {
   display: flex;
   align-items: center;
 }
-
 .logo a {
   color: #000;
   font-size: 18px;
   font-weight: 600;
   margin: 2px 8px;
 }
-
-
-
 .header-icons {
   display: flex;
   cursor: pointer;
   align-items: center;
 }
-
 .header-icons i {
   margin-right: 1rem;
   cursor: pointer;
 }
-
 .header-icons .account {
   width: 130px;
   display: flex;
@@ -67,16 +56,13 @@ body {
 .account h4 {
   text-wrap: nowrap;
 }
-
 .adm {
   cursor: not-allowed;
 }
-
 .search_box {
   display: flex;
   align-items: center;
 }
-
 .search_box input {
   padding: 9px;
   width: 250px;
@@ -84,11 +70,9 @@ body {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-
 .search_box input::placeholder {
   font-style: italic;
 }
-
 .search_box i {
   padding: 0.66rem;
   cursor: pointer;
@@ -97,13 +81,11 @@ body {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
 .container {
   height: 100%;
   display: flex;
   justify-content: center;
 }
-
 main {
   display: flex;
   height: unset;
@@ -118,13 +100,24 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
 }
-
 /* Side menubar section */
 nav {
   background: #fff;
   box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18)
+}
+
+/* Main Body Section */
+.body {
+  width: 70%;
+  padding: 1rem;
+  margin: auto;
+
+}
+
+.main-body {
+  width: 100%;
+  padding: 1rem;
 }
 
 .lists {
