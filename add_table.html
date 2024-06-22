@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2>Table</h2>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-body">
+            <div class="lists">
+                <div class="list1">
+                    <div class="row">
+                        <a href="#popup1"><button class="button">Create Table</button></a>
+                        <!-- <a href="#">See all</a> -->
+                        <div class="search_box">
+                            <input type="text" placeholder="Search...">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup1" class="popup-container">
+                <div class="card">
+                    <div class="card_title">
+                        <h1>Add Table</h1>
+                    </div>
+                    <div class="form">
+                        <form onsubmit="return addTable()" id="addTables">
+                            <input type="text" id="table_name" name="table_name" placeholder="Enter table name"
+                                required />
+
+                            <select name="seats" id="seats">
+                                <option value="" selected disabled>Select any one option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select name="table_type" id="table_type" required>
+                                <option value="" selected disabled>Select table type</option>
+                            </select>
+                            <p id="errorMessage"></p>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="tableContainer" class="table-container"></div>
+        </div>
+    </div>
+    <script src="public/app.js"></script>
+</body>
+
+</html>
