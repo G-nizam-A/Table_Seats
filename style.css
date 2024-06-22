@@ -469,11 +469,14 @@ table tbody td {
 .view-button:hover{
   background: #4b4b4b;
 }
+.table_view{
+  overflow: hidden;
+}
 .table-shape-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Adjust as needed */
+  height: 60vh; 
   position: relative;
 }
 
